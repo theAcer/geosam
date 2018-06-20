@@ -1,0 +1,9 @@
+Drawable/icon_mapsuite_Minus.png;drawable/icon_mapsuite_minus.png
+Drawable/icon_mapsuite_Plus.png;drawable/icon_mapsuite_plus.png
+Drawable/icon_mapsuite_default256x256.png;drawable/icon_mapsuite_default256x256.png
+Drawable/icon_mapsuite_noImageTile.png;drawable/icon_mapsuite_noimagetile.png
+Drawable/icon_mapsuite_Minus_Pressed.png;drawable/icon_mapsuite_minus_pressed.png
+Drawable/icon_mapsuite_Plus_Pressed.png;drawable/icon_mapsuite_plus_pressed.png
+Drawable/icon_mapsuite_globe.png;drawable/icon_mapsuite_globe.png
+Drawable/icon_mapsuite_globe_Pressed.png;drawable/icon_mapsuite_globe_pressed.png
+Drawable/icon_mapsuite_default512x512.png;drawable/icon_mapsuite_default512x512.png

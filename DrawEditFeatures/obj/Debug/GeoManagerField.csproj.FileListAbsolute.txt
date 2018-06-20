@@ -1,0 +1,328 @@
+D:\GeoF\DrawEditFeatures\bin\Debug\AndroidEdition.dll
+D:\GeoF\DrawEditFeatures\bin\Debug\MapSuitePortableCore.dll
+D:\GeoF\DrawEditFeatures\bin\Debug\PortableGeoApi.dll
+D:\GeoF\DrawEditFeatures\bin\Debug\PortableNetTopologySuite.dll
+D:\GeoF\DrawEditFeatures\bin\Debug\AndroidEdition.xml
+D:\GeoF\DrawEditFeatures\bin\Debug\MapSuitePortableCore.xml
+D:\GeoF\DrawEditFeatures\obj\Debug\res\layout\main.xml
+D:\GeoF\DrawEditFeatures\obj\Debug\res\layout\instruction.xml
+D:\GeoF\DrawEditFeatures\obj\Debug\res\values\strings.xml
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\icon.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\circle.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\clear.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\cursor.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\draw.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\edit.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\ellipse.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\line.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\point.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\polygon.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\rectangle.png
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\buttonbackground.xml
+D:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\buttonselectedbackground.xml
+D:\GeoF\DrawEditFeatures\obj\Debug\R.cs.flag
+D:\GeoF\DrawEditFeatures\obj\Debug\uploadflags.txt
+D:\GeoF\DrawEditFeatures\bin\Debug\GeoManagerField.dll
+D:\GeoF\DrawEditFeatures\bin\Debug\GeoManagerField.pdb
+D:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.dll
+D:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.pdb
+D:\GeoF\DrawEditFeatures\bin\Debug\GeoManager.GeoManager.apk
+D:\GeoF\DrawEditFeatures\bin\Debug\GeoManager.GeoManager-Signed.apk
+D:\GeoF\DrawEditFeatures\obj\Debug\android\bin\GeoManager.GeoManager.apk
+D:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.csprojResolveAssemblyReference.cache
+D:\GeoF\DrawEditFeatures\bin\Debug\GeoManagerField.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\Java.Interop.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\Mono.Android.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\mscorlib.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.Core.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.Net.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.Net.Http.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.ServiceModel.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.ServiceModel.Web.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.Xml.dll.mdb
+D:\GeoF\DrawEditFeatures\bin\Debug\System.Xml.Linq.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\GeoManagerField.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Core.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Net.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.Web.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.csprojResolveAssemblyReference.cache
+C:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.dll
+C:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.pdb
+C:\GeoF\DrawEditFeatures\bin\Debug\GeoManagerField.dll
+C:\GeoF\DrawEditFeatures\bin\Debug\GeoManagerField.pdb
+C:\GeoF\DrawEditFeatures\bin\Debug\GeoManager.GeoManager.apk
+C:\GeoF\DrawEditFeatures\bin\Debug\GeoManager.GeoManager-Signed.apk
+C:\GeoF\DrawEditFeatures\obj\Debug\android\bin\GeoManager.GeoManager.apk
+C:\GeoF\DrawEditFeatures\obj\Debug\res\layout\main.xml
+C:\GeoF\DrawEditFeatures\obj\Debug\res\layout\instruction.xml
+C:\GeoF\DrawEditFeatures\obj\Debug\res\values\strings.xml
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\icon.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\circle.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\clear.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\cursor.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\draw.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\edit.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\ellipse.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\line.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\point.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\polygon.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\rectangle.png
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\buttonbackground.xml
+C:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\buttonselectedbackground.xml
+C:\GeoF\DrawEditFeatures\obj\Debug\R.cs.flag
+C:\GeoF\DrawEditFeatures\obj\Debug\uploadflags.txt
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\GeoManagerField.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Core.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Net.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.Web.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\GeoF\DrawEditFeatures\bin\Debug\AndroidEdition.dll
+C:\GeoF\DrawEditFeatures\bin\Debug\MapSuitePortableCore.dll
+C:\GeoF\DrawEditFeatures\bin\Debug\PortableGeoApi.dll
+C:\GeoF\DrawEditFeatures\bin\Debug\PortableNetTopologySuite.dll
+C:\GeoF\DrawEditFeatures\bin\Debug\AndroidEdition.xml
+C:\GeoF\DrawEditFeatures\bin\Debug\MapSuitePortableCore.xml
+C:\GeoF\DrawEditFeatures\bin\Debug\GeoManagerField.dll.mdb
+C:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.dll.mdb
+F:\GeoF\DrawEditFeatures\bin\Debug\GeoManagerField.dll
+F:\GeoF\DrawEditFeatures\bin\Debug\GeoManagerField.pdb
+F:\GeoF\DrawEditFeatures\bin\Debug\GeoManager.GeoManager.apk
+F:\GeoF\DrawEditFeatures\bin\Debug\GeoManager.GeoManager-Signed.apk
+F:\GeoF\DrawEditFeatures\bin\Debug\PortableGeoApi.dll
+F:\GeoF\DrawEditFeatures\bin\Debug\PortableNetTopologySuite.dll
+F:\GeoF\DrawEditFeatures\bin\Debug\AndroidEdition.xml
+F:\GeoF\DrawEditFeatures\bin\Debug\MapSuitePortableCore.xml
+F:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.csprojResolveAssemblyReference.cache
+F:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.dll
+F:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.pdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\bin\GeoManager.GeoManager.apk
+F:\GeoF\DrawEditFeatures\obj\Debug\res\layout\main.xml
+F:\GeoF\DrawEditFeatures\obj\Debug\res\layout\instruction.xml
+F:\GeoF\DrawEditFeatures\obj\Debug\res\values\strings.xml
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\icon.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\circle.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\clear.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\cursor.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\draw.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\edit.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\ellipse.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\line.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\point.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\polygon.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\rectangle.png
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\buttonbackground.xml
+F:\GeoF\DrawEditFeatures\obj\Debug\res\drawable\buttonselectedbackground.xml
+F:\GeoF\DrawEditFeatures\obj\Debug\R.cs.flag
+F:\GeoF\DrawEditFeatures\obj\Debug\uploadflags.txt
+F:\GeoF\DrawEditFeatures\bin\Debug\GeoManagerField.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\GeoManagerField.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\Java.Interop.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\Mono.Android.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\mscorlib.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Core.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Net.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Net.Http.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.Web.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Xml.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+F:\GeoF\DrawEditFeatures\obj\Debug\GeoManagerField.dll.mdb
+F:\GeoF - Copy - Copy\DrawEditFeatures\bin\Debug\GeoManagerField.dll
+F:\GeoF - Copy - Copy\DrawEditFeatures\bin\Debug\GeoManagerField.pdb
+F:\GeoF - Copy - Copy\DrawEditFeatures\bin\Debug\GeoManager.GeoManager.apk
+F:\GeoF - Copy - Copy\DrawEditFeatures\bin\Debug\GeoManager.GeoManager-Signed.apk
+F:\GeoF - Copy - Copy\DrawEditFeatures\bin\Debug\PortableGeoApi.dll
+F:\GeoF - Copy - Copy\DrawEditFeatures\bin\Debug\PortableNetTopologySuite.dll
+F:\GeoF - Copy - Copy\DrawEditFeatures\bin\Debug\AndroidEdition.xml
+F:\GeoF - Copy - Copy\DrawEditFeatures\bin\Debug\MapSuitePortableCore.xml
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\GeoManagerField.csprojResolveAssemblyReference.cache
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\GeoManagerField.dll
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\GeoManagerField.pdb
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\android\bin\GeoManager.GeoManager.apk
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\layout\main.xml
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\layout\instruction.xml
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\values\strings.xml
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\icon.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\circle.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\clear.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\cursor.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\draw.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\edit.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\ellipse.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\line.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\point.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\polygon.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\rectangle.png
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\buttonbackground.xml
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\res\drawable\buttonselectedbackground.xml
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\R.cs.flag
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\uploadflags.txt
+F:\GeoF - Copy - Copy\DrawEditFeatures\obj\Debug\GeoManagerField.dll.mdb
+F:\GeoF - Copy - Copy\DrawEditFeatures\bin\Debug\GeoManagerField.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\GeoManagerField.dll
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\GeoManagerField.pdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\GeoManager.GeoManager.apk
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\GeoManager.GeoManager-Signed.apk
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\AndroidEdition.dll
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\GeoAPI.dll
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\MapSuitePortableCore.dll
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\PortableGeoApi.dll
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\PortableNetTopologySuite.dll
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\AndroidEdition.xml
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\MapSuitePortableCore.xml
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\GeoManagerField.dll
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\GeoManagerField.pdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\bin\GeoManager.GeoManager.apk
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\layout\main.xml
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\layout\instruction.xml
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\values\strings.xml
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\icon.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\circle.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\clear.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\cursor.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\draw.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\edit.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\ellipse.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\line.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\point.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\polygon.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\rectangle.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\buttonbackground.xml
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\buttonselectedbackground.xml
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\search.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\add.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\res\drawable\gps.png
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\R.cs.flag
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\uploadflags.txt
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\GeoManagerField.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\GeoManagerField.csprojResolveAssemblyReference.cache
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\Java.Interop.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\Mono.Android.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\mscorlib.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.ComponentModel.Composition.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.Core.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.Net.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.Net.Http.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.Runtime.Serialization.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.ServiceModel.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.ServiceModel.Internals.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.ServiceModel.Web.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.Xml.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\bin\Debug\System.Xml.Linq.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\GeoManagerField.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\Java.Interop.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\Mono.Android.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\mscorlib.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.Core.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.Net.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.Net.Http.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.Web.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.Xml.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+F:\GeoManager_Field\DrawEditFeatures\obj\Debug\GeoManagerField.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\GeoManagerField.dll
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\GeoManagerField.pdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\GeoManager.GeoManager.apk
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\GeoManager.GeoManager-Signed.apk
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\AndroidEdition.dll
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\GeoAPI.dll
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\MapSuitePortableCore.dll
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\PortableGeoApi.dll
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\PortableNetTopologySuite.dll
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\AndroidEdition.xml
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\MapSuitePortableCore.xml
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\GeoManagerField.csprojResolveAssemblyReference.cache
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\GeoManagerField.dll
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\GeoManagerField.pdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\bin\GeoManager.GeoManager.apk
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\layout\main.xml
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\layout\instruction.xml
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\values\strings.xml
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\icon.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\circle.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\clear.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\cursor.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\draw.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\edit.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\ellipse.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\line.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\point.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\polygon.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\rectangle.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\buttonbackground.xml
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\buttonselectedbackground.xml
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\search.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\add.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\res\drawable\gps.png
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\R.cs.flag
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\uploadflags.txt
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\GeoManagerField.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\Java.Interop.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\Mono.Android.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\mscorlib.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.ComponentModel.Composition.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.Core.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.Net.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.Net.Http.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.Runtime.Serialization.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.ServiceModel.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.ServiceModel.Internals.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.ServiceModel.Web.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.Xml.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.Xml.Linq.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\GeoManagerField.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\Java.Interop.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\Mono.Android.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\mscorlib.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.Core.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.Net.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.Net.Http.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.ServiceModel.Web.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.Xml.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\System.IdentityModel.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\android\assets\System.IdentityModel.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\obj\Debug\GeoManagerField.dll.mdb
+F:\GeoManager_Field - Copy\DrawEditFeatures\bin\Debug\GeoManagerField.dll.mdb
