@@ -51,7 +51,7 @@ namespace GeoManagerField
         LayerOverlay layerOverlay = new LayerOverlay();
         InMemoryFeatureLayer pointLayer = new InMemoryFeatureLayer();
         ManagedProj4Projection proj4 = new ManagedProj4Projection();
-
+        
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -71,28 +71,24 @@ namespace GeoManagerField
             
             ShapeFileFeatureLayer buildingLayer = new ShapeFileFeatureLayer(System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).ToString(), "building.shp"));
             buildingLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle = AreaStyles.CreateSimpleAreaStyle(
-            GeoColor.FromArgb(100, GeoColor.StandardColors.Gray), GeoColor.StandardColors.Black);
+            GeoColor.FromArgb(100, GeoColor.StandardColors.Gray), GeoColor.StandardColors.Blue);
             buildingLayer.ZoomLevelSet.ZoomLevel01.DefaultTextStyle = new TextStyle("BLD_NO", new GeoFont("Arail", 9, DrawingFontStyles.Bold), new GeoSolidBrush(GeoColor.SimpleColors.Black));
             buildingLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
 
-
             ShapeFileFeatureLayer hLayer = new ShapeFileFeatureLayer(System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).ToString(), "BLOCKs.shp"), ShapeFileReadWriteMode.ReadWrite);
-            hLayer.ZoomLevelSet.ZoomLevel01.DefaultTextStyle = new TextStyle("BLOCKS", new GeoFont("Arail", 9, DrawingFontStyles.Bold), new GeoSolidBrush(GeoColor.SimpleColors.Black));
-            hLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle.FillSolidBrush.Color = GeoColor.FromArgb(100, GeoColor.StandardColors.Green);
+            hLayer.ZoomLevelSet.ZoomLevel01.DefaultTextStyle = new TextStyle("BLOCKSch", new GeoFont("Arail", 9, DrawingFontStyles.Bold), new GeoSolidBrush(GeoColor.SimpleColors.Black));
+            hLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle.FillSolidBrush.Color = GeoColor.FromArgb(100, GeoColor.StandardColors.Blue);
             hLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle.OutlinePen.Color = GeoColor.StandardColors.Blue;
             hLayer.ZoomLevelSet.ZoomLevel01.DefaultLineStyle.OuterPen = new GeoPen(GeoColor.FromArgb(200, GeoColor.StandardColors.Red), 5);
             hLayer.ZoomLevelSet.ZoomLevel01.DefaultPointStyle.SymbolPen = new GeoPen(GeoColor.FromArgb(255, GeoColor.StandardColors.Green), 8);
             hLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
-
-        
+  
             pointLayer.ZoomLevelSet.ZoomLevel01.DefaultPointStyle = PointStyles.CreateSimpleCircleStyle(GeoColor.StandardColors.Red, 12, GeoColor.StandardColors.Black);
             pointLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;          
-          //  Feature gmp = new Feature(new PointShape(256721.2508062, 9855780.04717357));         
-          //  pointLayer.InternalFeatures.Add(gmp);
+            //  Feature gmp = new Feature(new PointShape(256721.2508062, 9855780.04717357));         
+            //  pointLayer.InternalFeatures.Add(gmp);
             LayerOverlay pointOverlay = new LayerOverlay( );
             pointOverlay.Layers.Add("PointLayer", pointLayer);             
-           
-
 
             //  LayerOverlay layerOverlay = new LayerOverlay();  moved to public 
             layerOverlay.Layers.Add("Cadastral", shapeFileFeatureLayer);
@@ -103,11 +99,10 @@ namespace GeoManagerField
             LayerOverlay bOverlay = new LayerOverlay();
             bOverlay.Layers.Add("Building", buildingLayer);
 
-
-       androidMap.Overlays.Add("building", bOverlay);
-        androidMap.Overlays.Add("cadastral", layerOverlay);
-      androidMap.Overlays.Add("blocks", hOverlay);
-             androidMap .Overlays.Add("gmpoint",pointOverlay);
+            androidMap.Overlays.Add("building", bOverlay);
+            androidMap.Overlays.Add("cadastral", layerOverlay);
+            androidMap.Overlays.Add("blocks", hOverlay);
+            androidMap .Overlays.Add("gmpoint",pointOverlay);
 
             //  var v = Android.OS.Environment.GetExternalStoragePublicDirectory ();
             //Internal projection string from the PRJ file. Note that the false easting value (x_0) has to be expressed in meter for proj4 string.
@@ -121,7 +116,6 @@ namespace GeoManagerField
             buildingLayer.FeatureSource.Projection = proj4;
             pointLayer.FeatureSource.Projection = proj4;
 
-
             hLayer.RequireIndex = false;
             buildingLayer.RequireIndex = false;
             shapeFileFeatureLayer.RequireIndex = false;
@@ -133,7 +127,7 @@ namespace GeoManagerField
             proj4.Close();
             androidMap.Refresh();
 
-           gpsButton = GetButton(Resource.Drawable.Gps , TrackButtonClick);
+            gpsButton = GetButton(Resource.Drawable.Gps , TrackButtonClick);
             addButton = GetButton(Resource.Drawable.Add, TrackButtonClick);
             searchButton = GetButton(Resource.Drawable.Search, TrackButtonClick);
             cursorButton = GetButton(Resource.Drawable.Cursor, TrackButtonClick);
@@ -165,10 +159,8 @@ namespace GeoManagerField
             toolsLinearLayout.AddView(trackLinearLayout);
             toolsLinearLayout.AddView(editButton);
             toolsLinearLayout.AddView(clearButton);
-
             InitializeInstruction(toolsLinearLayout);
         }
-
         private ImageButton GetButton(int imageResId, EventHandler handler)
         {
             ImageButton button = new ImageButton(this);
@@ -178,7 +170,6 @@ namespace GeoManagerField
             button.SetBackgroundResource(Resource.Drawable.buttonbackground);
             return button;
         }
-
         private IEnumerable<ImageButton> GetButtons()
         {
             yield return editButton;
@@ -195,7 +186,6 @@ namespace GeoManagerField
             yield return addButton;
             yield return gpsButton;
         }
-
         private void TrackButtonClick(object sender, EventArgs e)
         {
             ImageButton button = (ImageButton)sender;
@@ -259,7 +249,7 @@ namespace GeoManagerField
                     PlotSearch();
                     break;
                 case Resource.Drawable.Add:
-                    AddLayers();
+                        AddLayers();
                     break;
                 case Resource.Drawable.Gps:
                     if (locationInitialised)
@@ -338,7 +328,6 @@ namespace GeoManagerField
 
             }
         }
-
         void postLayerChange(string GVB)
         {
             //iterate edit and new layer features
@@ -353,7 +342,6 @@ namespace GeoManagerField
             }
 
         }
-
         void editsave(Feature feature, string GVB)
         {
             LayerOverlay layerOverlay = (LayerOverlay)androidMap.Overlays["blocks"];
@@ -377,21 +365,15 @@ namespace GeoManagerField
         {
             androidMap.TrackOverlay.TrackShapeLayer.InternalFeatures.Clear();// necessary to reset the search selection 
             androidMap.EditOverlay.EditShapesLayer.InternalFeatures.Clear();// necessary to reset the search selection 
-
             PointF location = new PointF(e.GetX(), e.GetY());
             PointShape position = ExtentHelper.ToWorldCoordinate(androidMap.CurrentExtent, location.X,
-         location.Y, androidMap.Width, androidMap.Height);
-
-
+            location.Y, androidMap.Width, androidMap.Height);
             var inputDialog = new AlertDialog.Builder(this);
-
             inputDialog.SetTitle("Choose Action");
-
             inputDialog.SetPositiveButton(
                 "Get LR No.",
                 (see, ess) =>
                 {
-
                     try
                     {
                         LayerOverlay highlightOverlay = (LayerOverlay)androidMap.Overlays["cadastral"];
@@ -415,21 +397,17 @@ namespace GeoManagerField
                     }
                     catch (Exception ex)
                     {
-
                         // do nothing 
                     }
                 });
             inputDialog.SetNegativeButton("Get Building No.", (afk, kfa) => {
                 try
                 {
-
                     LayerOverlay highlightOverlay = (LayerOverlay)androidMap.Overlays["building"];
                     FeatureLayer highlightLayer = (FeatureLayer)highlightOverlay.Layers["Building"];
-
                     highlightLayer.Open();
                     Collection<Feature> selectedFeatures = highlightLayer.QueryTools.GetFeaturesContaining(position, new string[1] { "BLD_NO" });
                     highlightLayer.Close();
-
                     if (selectedFeatures.Count > 0)
                     {
                         string p = null;
@@ -441,17 +419,13 @@ namespace GeoManagerField
                         var intent = new Intent(Intent.ActionView, uri);
                         StartActivity(intent);
                     }
-
                 }
                 catch (Exception ex)
                 {
-
                     //do nothing 
                 }
-
             });
             inputDialog.Show();
-
         }
         void PlotSearch()
         {
@@ -600,7 +574,6 @@ namespace GeoManagerField
                     shpcount ++;
                 }
 
-              
             }
             filenames = new string[shpcount ];
             int i = 0;
@@ -612,18 +585,22 @@ namespace GeoManagerField
                     i++;
                 }
 
-
             }
-          
-
-
-            return filenames;
-             
-        }
-         
+            return filenames;           
+        }         
         void AddLayers()
         {
-
+            
+            var colors = new List<Color>
+            {
+                Color.Red,
+                Color.Blue,
+                Color.Yellow,
+                Color.Green,
+                Color.Brown,
+                Color.Orange,
+                Color.Purple
+            };
             string[] fnames = GetShapefiles();
             AlertDialog.Builder builder = new AlertDialog.Builder(this );
             builder.SetTitle("Select Shape File?");
@@ -631,15 +608,16 @@ namespace GeoManagerField
             {
                 if (fnames[args.Which] != null)
                 {
+
                     //  Toast.MakeText( this , "Choose existing Service picked" +  fnames [args.Which], ToastLength.Short).Show();
                     string layername = fnames[args.Which];
-                    ShapeFileFeatureLayer nLayer = new ShapeFileFeatureLayer(System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).ToString(), layername ), ShapeFileReadWriteMode.ReadOnly);
+                    ShapeFileFeatureLayer nLayer = new ShapeFileFeatureLayer(System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).ToString(), layername ), ShapeFileReadWriteMode.ReadOnly);                   
                     nLayer.RequireIndex = false;
                     nLayer.Open();
+                   
                     if (nLayer.GetShapeFileType() == ShapeFileType.Point)
                     {
-                        nLayer.ZoomLevelSet.ZoomLevel01.DefaultPointStyle = PointStyles.CreateSimplePointStyle(PointSymbolType.Circle, GeoColor.StandardColors.Red, GeoColor.StandardColors.Orange, 2);
-                     
+                        nLayer.ZoomLevelSet.ZoomLevel01.DefaultPointStyle = PointStyles.CreateSimplePointStyle(PointSymbolType.Circle, GeoColor.StandardColors.Red, GeoColor.StandardColors.Orange, 2);               
                         nLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
                     }
                     else if (nLayer.GetShapeFileType() == ShapeFileType.Polyline)
@@ -648,11 +626,11 @@ namespace GeoManagerField
                         nLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
                     }
                     else if (nLayer.GetShapeFileType() == ShapeFileType.Polygon)
+                    
                     {
                         nLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle = AreaStyles.CreateSimpleAreaStyle(
-                         GeoColor.FromArgb(100, GeoColor.StandardColors.White), GeoColor.StandardColors.Chocolate);
+                         GeoColor.FromArgb(100, GeoColor.StandardColors.LightYellow), GeoColor.StandardColors.Blue);
                     }
-
                     var  v   = nLayer.QueryTools.GetColumns() ;
                     string[] fields = new string[ v.Count ];
                     //for (int i = 0; i<v.Count ; ++i)
@@ -661,43 +639,31 @@ namespace GeoManagerField
                     {                                               
                         fields[i] = c.ColumnName;
                         i++;
-                    }
-
-                        
+                    } 
                     AlertDialog.Builder bld = new AlertDialog.Builder(this);
-                  bld .SetTitle("Select labelling field?");
-               bld .SetItems(  fields  , (senders, argss) =>
+                    bld .SetTitle("Select labelling field?");
+                    bld .SetItems(  fields  , (senders, argss) =>
                     {
                         if (fields[argss.Which] != null)
                         {
                             string d = fields[argss.Which].ToString();
-
                             if (nLayer.GetShapeFileType() == ShapeFileType.Polyline)
                             {
                                 nLayer.ZoomLevelSet.ZoomLevel01.DefaultTextStyle = TextStyles.LocalRoad1(fields[argss.Which]);
-
                             } else
-                            {
-                            
-                            nLayer.ZoomLevelSet.ZoomLevel01.DefaultTextStyle = new TextStyle(fields[argss.Which], new GeoFont("Arail", 9, DrawingFontStyles.Bold), new GeoSolidBrush(GeoColor.SimpleColors.Black));
-                     
+                            {                            
+                            nLayer.ZoomLevelSet.ZoomLevel01.DefaultTextStyle = new TextStyle(fields[argss.Which], new GeoFont("Arail", 9, DrawingFontStyles.Bold), new GeoSolidBrush(GeoColor.SimpleColors.Black));                    
                             }
                             nLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
                             nLayer.Close();
-
                             nLayer.FeatureSource.Projection = proj4;
                             LayerOverlay lOverlay = new LayerOverlay();
                             lOverlay.Layers.Add(layername, nLayer);
                             androidMap.Overlays.Add(layername, lOverlay);
-                            androidMap.Refresh();
-
+                            androidMap.Refresh();                              
                         }
                     });
                     bld.Create().Show();
-                   
-
-
-
                 }
                 else if (fnames[args.Which] ==null )
                 {
@@ -705,9 +671,7 @@ namespace GeoManagerField
                     //How to close dialog Here 
                 }
             });
-
             builder.Create() .Show();
-
         }
         public static T[] ToGenericArray<T>(Collection<T> collection)
         {
@@ -752,17 +716,13 @@ namespace GeoManagerField
             InputMethodManager imm = (InputMethodManager)this.GetSystemService(Context.InputMethodService);
             imm.ToggleSoftInput(ShowFlags.Forced, 0);
         }
-        
-
-private void HideKeyboard(EditText userInput)
-        {
-            InputMethodManager imm = (InputMethodManager)this.GetSystemService(Context.InputMethodService);
-            imm.HideSoftInputFromWindow(userInput.WindowToken, 0);
-        }
+        private void HideKeyboard(EditText userInput)
+                {
+                    InputMethodManager imm = (InputMethodManager)this.GetSystemService(Context.InputMethodService);
+                    imm.HideSoftInputFromWindow(userInput.WindowToken, 0);
+                }
         public void InitializeInstruction(params View[] contentViews)
-        {
-
-            
+        {      
             contentHeight = 0;
             ViewGroup containerView = FindViewById<RelativeLayout>(Resource.Id.MainLayout);
 
@@ -792,7 +752,6 @@ private void HideKeyboard(EditText userInput)
                 instructionLayout.Layout(instructionLayout.Left, instructionLayout.Top + contentHeight, instructionLayout.Right, instructionLayout.Bottom);
             };
         }
-
         public void OnLocationChanged(Location location)
         {
             if (locationInitialised)
@@ -819,25 +778,17 @@ private void HideKeyboard(EditText userInput)
                     //               gpsproj4.Open();
                     //               Vertex gpspoint  = gpsproj4 .ConvertToExternalProjection   (location .Latitude , location .Longitude );
                     //               gpsproj4.Close();
-
-
-
                 }
             }
-
-            
+         
         }
         protected override void OnResume()
         {
             base.OnResume();
             if (locationInitialised )
             {
-   _locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
+                 _locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
             }
-           
-             
-            
-          
         }
         protected override void OnPause()
         {
@@ -845,23 +796,17 @@ private void HideKeyboard(EditText userInput)
 
             if (locationInitialised )
             {
-  _locationManager.RemoveUpdates(this);
-            }
-              
-
-             
-          
+                 _locationManager.RemoveUpdates(this);
+            }  
         }
         public void OnProviderDisabled(string provider)
         {
             throw new NotImplementedException();
         }
-
         public void OnProviderEnabled(string provider)
         {
           throw new NotImplementedException();
         }
-
         public void OnStatusChanged(string provider, [GeneratedEnum] Availability status, Bundle extras)
         {
             //throw new NotImplementedException();
@@ -886,9 +831,6 @@ private void HideKeyboard(EditText userInput)
                 _locationProvider = String.Empty;
             }
         }
-
-
-
     }
 }
 
