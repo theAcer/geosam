@@ -23,14 +23,14 @@ using System.Text;
 namespace GeoManagerField
 {
     [Activity(Label = "GeoManager Field V4.3 - Powered by Geomaps.", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity ,ILocationListener 
+    public class MainActivity : Activity, ILocationListener
     {
         private int contentHeight;
         private MapView androidMap;
         private ImageButton editButton;
         private ImageButton searchButton;
         private ImageButton gpsButton;
-        private ImageButton addButton;
+        private Button addButton;
         private ImageButton lineButton;
         private ImageButton pointButton;
         private ImageButton clearButton;
@@ -42,22 +42,24 @@ namespace GeoManagerField
         private ImageButton drawButton;
         private LinearLayout trackLinearLayout;
         private Vertex endVertex;
+        string clickcount = "0";
+
         //location variables   
         Android.Locations.Location _currentLocation;
-        Android.Locations.LocationManager _locationManager;        
+        Android.Locations.LocationManager _locationManager;
         String _locationProvider;
 
-        bool locationInitialised = false ;
+        bool locationInitialised = false;
         LayerOverlay layerOverlay = new LayerOverlay();
         InMemoryFeatureLayer pointLayer = new InMemoryFeatureLayer();
         ManagedProj4Projection proj4 = new ManagedProj4Projection();
-        
+
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
-          
+
             // WorldMapKitOverlay worldOverlay = new WorldMapKitOverlay();
             androidMap = FindViewById<MapView>(Resource.Id.androidmap);
             androidMap.TrackOverlay.VertexAdded += (sender, e) => { endVertex = e.AddedVertex; };
@@ -68,7 +70,7 @@ namespace GeoManagerField
            GeoColor.FromArgb(100, GeoColor.StandardColors.White), GeoColor.StandardColors.Green);
             shapeFileFeatureLayer.ZoomLevelSet.ZoomLevel01.DefaultTextStyle = new TextStyle("Plotno_1", new GeoFont("Arail", 9, DrawingFontStyles.Bold), new GeoSolidBrush(GeoColor.SimpleColors.Black));
             shapeFileFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
-            
+
             ShapeFileFeatureLayer buildingLayer = new ShapeFileFeatureLayer(System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).ToString(), "building.shp"));
             buildingLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle = AreaStyles.CreateSimpleAreaStyle(
             GeoColor.FromArgb(100, GeoColor.StandardColors.Gray), GeoColor.StandardColors.Blue);
@@ -82,13 +84,13 @@ namespace GeoManagerField
             hLayer.ZoomLevelSet.ZoomLevel01.DefaultLineStyle.OuterPen = new GeoPen(GeoColor.FromArgb(200, GeoColor.StandardColors.Red), 5);
             hLayer.ZoomLevelSet.ZoomLevel01.DefaultPointStyle.SymbolPen = new GeoPen(GeoColor.FromArgb(255, GeoColor.StandardColors.Green), 8);
             hLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
-  
+
             pointLayer.ZoomLevelSet.ZoomLevel01.DefaultPointStyle = PointStyles.CreateSimpleCircleStyle(GeoColor.StandardColors.Red, 12, GeoColor.StandardColors.Black);
-            pointLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;          
+            pointLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
             //  Feature gmp = new Feature(new PointShape(256721.2508062, 9855780.04717357));         
             //  pointLayer.InternalFeatures.Add(gmp);
-            LayerOverlay pointOverlay = new LayerOverlay( );
-            pointOverlay.Layers.Add("PointLayer", pointLayer);             
+            LayerOverlay pointOverlay = new LayerOverlay();
+            pointOverlay.Layers.Add("PointLayer", pointLayer);
 
             //  LayerOverlay layerOverlay = new LayerOverlay();  moved to public 
             layerOverlay.Layers.Add("Cadastral", shapeFileFeatureLayer);
@@ -102,7 +104,7 @@ namespace GeoManagerField
             androidMap.Overlays.Add("building", bOverlay);
             androidMap.Overlays.Add("cadastral", layerOverlay);
             androidMap.Overlays.Add("blocks", hOverlay);
-            androidMap .Overlays.Add("gmpoint",pointOverlay);
+            androidMap.Overlays.Add("gmpoint", pointOverlay);
 
             //  var v = Android.OS.Environment.GetExternalStoragePublicDirectory ();
             //Internal projection string from the PRJ file. Note that the false easting value (x_0) has to be expressed in meter for proj4 string.
@@ -110,7 +112,7 @@ namespace GeoManagerField
             proj4.InternalProjectionParametersString = internalProjectionString;
             //External projection string as Geodetic (21037).
             proj4.ExternalProjectionParametersString = ManagedProj4Projection.GetEpsgParametersString(21037);
-            proj4.Open();          
+            proj4.Open();
 
             shapeFileFeatureLayer.FeatureSource.Projection = proj4;
             buildingLayer.FeatureSource.Projection = proj4;
@@ -122,13 +124,13 @@ namespace GeoManagerField
             shapeFileFeatureLayer.Open();
             androidMap.MapDoubleTap += AndroidMap_MapDoubleTap;
 
-            androidMap.CurrentExtent = shapeFileFeatureLayer  .GetBoundingBox();
+            androidMap.CurrentExtent = shapeFileFeatureLayer.GetBoundingBox();
             shapeFileFeatureLayer.Close();
             proj4.Close();
             androidMap.Refresh();
 
-            gpsButton = GetButton(Resource.Drawable.Gps , TrackButtonClick);
-            addButton = GetButton(Resource.Drawable.Add, TrackButtonClick);
+            gpsButton = GetButton(Resource.Drawable.Gps, TrackButtonClick);
+            addButton = GetLayers(LayerOn);
             searchButton = GetButton(Resource.Drawable.Search, TrackButtonClick);
             cursorButton = GetButton(Resource.Drawable.Cursor, TrackButtonClick);
             drawButton = GetButton(Resource.Drawable.Draw, TrackButtonClick);
@@ -153,7 +155,7 @@ namespace GeoManagerField
             LinearLayout toolsLinearLayout = new LinearLayout(this);
             toolsLinearLayout.AddView(searchButton);
             toolsLinearLayout.AddView(addButton);
-            toolsLinearLayout.AddView(gpsButton );
+            toolsLinearLayout.AddView(gpsButton);
             toolsLinearLayout.AddView(cursorButton);
             toolsLinearLayout.AddView(drawButton);
             toolsLinearLayout.AddView(trackLinearLayout);
@@ -161,6 +163,7 @@ namespace GeoManagerField
             toolsLinearLayout.AddView(clearButton);
             InitializeInstruction(toolsLinearLayout);
         }
+
         private ImageButton GetButton(int imageResId, EventHandler handler)
         {
             ImageButton button = new ImageButton(this);
@@ -170,6 +173,17 @@ namespace GeoManagerField
             button.SetBackgroundResource(Resource.Drawable.buttonbackground);
             return button;
         }
+
+        private Button GetLayers(EventHandler handler)
+        {
+            Button button = new Button(this);
+            //button.Id = imageResId;
+            //button.SetImageResource(imageResId);
+            button.Click += handler;
+            button.SetBackgroundResource(Resource.Drawable.buttonbackground);
+            return button;
+        }
+
         private IEnumerable<ImageButton> GetButtons()
         {
             yield return editButton;
@@ -183,8 +197,12 @@ namespace GeoManagerField
             yield return rectangleButton;
             yield return drawButton;
             yield return searchButton;
-            yield return addButton;
+            //yield return addButton;
             yield return gpsButton;
+        }
+        private IEnumerable<Button> GetButtonss()
+        {
+            yield return addButton;  
         }
         private void TrackButtonClick(object sender, EventArgs e)
         {
@@ -244,27 +262,27 @@ namespace GeoManagerField
                     break;
                 case Resource.Drawable.Search:
                     // GPS OFF
-                   
+
                     Toast.MakeText(this, " GeoManager GPS Status : OFF  ", ToastLength.Short).Show();
                     PlotSearch();
                     break;
                 case Resource.Drawable.Add:
-                        AddLayers();
+                    //AddLayers();
                     break;
                 case Resource.Drawable.Gps:
                     if (locationInitialised)
                     {
                         // GPS OFF
-                        locationInitialised = false ;
+                        locationInitialised = false;
                         Toast.MakeText(this, " GeoManager GPS Status : OFF  ", ToastLength.Short).Show();
-                        
+
                     } else
                     {  // GPS ON
-                    locationInitialised = true;
-                    InitializeLocationManager();
+                        locationInitialised = true;
+                        InitializeLocationManager();
 
-                       Toast.MakeText(this, " GeoManager GPS Status : ON  ", ToastLength.Short).Show();
-                       
+                        Toast.MakeText(this, " GeoManager GPS Status : ON  ", ToastLength.Short).Show();
+
                     }
                     break;
                 case Resource.Drawable.Line:
@@ -328,6 +346,28 @@ namespace GeoManagerField
 
             }
         }
+        private void LayerOn(object sender, EventArgs e)
+        {
+            int value = Convert.ToInt32(clickcount);
+            //Convert.ToInt32(clickcount)++;
+            value++;
+            //clickcount++;
+            Button button = (Button)sender;
+            foreach (Button tempButton in GetButtonss())
+            {
+                tempButton.SetBackgroundResource(Resource.Drawable.buttonbackground);
+            }
+            button.SetBackgroundResource(Resource.Drawable.buttonselectedbackground);
+           
+            button.Click += delegate {
+                button.Text = "Times clicked: " + value;
+                
+            };
+           
+            androidMap.TrackOverlay.LongPress(new InteractionArguments() { WorldX = endVertex.X, WorldY = endVertex.Y });
+            AddLayers(value.ToString());
+        }
+
         void postLayerChange(string GVB)
         {
             //iterate edit and new layer features
@@ -586,29 +626,48 @@ namespace GeoManagerField
                 }
 
             }
+  
             return filenames;           
-        }         
-        void AddLayers()
+        }
+        string[] GetShapefiles2(string value)
         {
-            
-            var colors = new List<Color>
+            string[] filelist = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).List();
+            string[] filenames = null;
+            int shpcount = 0;
+            foreach (var item in filelist) //loop to first get array size for array initialization below 
             {
-                Color.Red,
-                Color.Blue,
-                Color.Yellow,
-                Color.Green,
-                Color.Brown,
-                Color.Orange,
-                Color.Purple
-            };
-            string[] fnames = GetShapefiles();
+                if (item.ToString().Contains(".shp"))
+                {
+                    shpcount++;
+                }
+
+            }
+            filenames = new string[shpcount];
+            int i = 0;
+            foreach (string item in filelist)//loop to set only shp file names 
+            {
+                if (item.Contains(".shp"))
+                {
+                    filenames[i] = item;
+                    i++;
+                }
+
+            }
+            Array.Resize(ref filenames, filenames.Length + 1);
+            filenames[filenames.Length - 1] = value;
+            return filenames;
+        }
+        void AddLayers(string value)
+        {
+            string[] fnames = GetShapefiles2(value);
+            
             AlertDialog.Builder builder = new AlertDialog.Builder(this );
             builder.SetTitle("Select Shape File?");
             builder.SetItems( fnames , (sender, args) =>
             {
+
                 if (fnames[args.Which] != null)
                 {
-
                     //  Toast.MakeText( this , "Choose existing Service picked" +  fnames [args.Which], ToastLength.Short).Show();
                     string layername = fnames[args.Which];
                     ShapeFileFeatureLayer nLayer = new ShapeFileFeatureLayer(System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).ToString(), layername ), ShapeFileReadWriteMode.ReadOnly);                   
@@ -832,5 +891,6 @@ namespace GeoManagerField
             }
         }
     }
+
 }
 

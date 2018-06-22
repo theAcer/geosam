@@ -3,7 +3,7 @@
   <xs:import schemaLocation="schemas.android.com.apk.res.android.xsd" namespace="http://schemas.android.com/apk/res/android" />
   <xs:annotation>
     <xs:documentation>v21</xs:documentation>
-    <xs:documentation>6/21/2018 12:00:47 PM</xs:documentation>
+    <xs:documentation>6/22/2018 11:05:42 AM</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -80,6 +80,16 @@
       <xs:element ref="AdapterViewFlipper" />
       <xs:element ref="ViewFlipper" />
       <xs:element ref="fragment" />
+      <xs:element ref="ThinkGeo.MapSuite.AndroidEdition.Popup" />
+      <xs:element ref="ThinkGeo.MapSuite.AndroidEdition.GpsMarker" />
+      <xs:element ref="ThinkGeo.MapSuite.AndroidEdition.Marker" />
+      <xs:element ref="ThinkGeo.MapSuite.AndroidEdition.LayerTileView" />
+      <xs:element ref="ThinkGeo.MapSuite.AndroidEdition.MapLayout" />
+      <xs:element ref="ThinkGeo.MapSuite.AndroidEdition.TileView" />
+      <xs:element ref="ThinkGeo.MapSuite.AndroidEdition.MapView" />
+      <xs:element ref="ThinkGeo.MapSuite.AndroidEdition.ZoomMapTool" />
+      <xs:element ref="ThinkGeo.MapSuite.AndroidEdition.CenterCoordinateMapTool" />
+      <xs:element ref="ThinkGeo.MapSuite.AndroidEdition.MapTool" />
     </xs:choice>
   </xs:group>
   <xs:element name="TimePicker" type="TimePicker">
@@ -1388,5 +1398,105 @@
     <xs:attribute ref="android:layout_marginStart" />
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
+  </xs:complexType>
+  <xs:element name="ThinkGeo.MapSuite.AndroidEdition.Popup" type="ThinkGeo.MapSuite.AndroidEdition.Popup">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: ThinkGeo.MapSuite.AndroidEdition.Popup</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ThinkGeo.MapSuite.AndroidEdition.Popup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThinkGeo.MapSuite.AndroidEdition.GpsMarker" type="ThinkGeo.MapSuite.AndroidEdition.GpsMarker">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: ThinkGeo.MapSuite.AndroidEdition.GpsMarker</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ThinkGeo.MapSuite.AndroidEdition.GpsMarker">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThinkGeo.MapSuite.AndroidEdition.Marker" type="ThinkGeo.MapSuite.AndroidEdition.Marker">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: ThinkGeo.MapSuite.AndroidEdition.Marker</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ThinkGeo.MapSuite.AndroidEdition.Marker">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThinkGeo.MapSuite.AndroidEdition.LayerTileView" type="ThinkGeo.MapSuite.AndroidEdition.LayerTileView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: ThinkGeo.MapSuite.AndroidEdition.LayerTileView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ThinkGeo.MapSuite.AndroidEdition.LayerTileView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThinkGeo.MapSuite.AndroidEdition.MapLayout" type="ThinkGeo.MapSuite.AndroidEdition.MapLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: ThinkGeo.MapSuite.AndroidEdition.MapLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ThinkGeo.MapSuite.AndroidEdition.MapLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThinkGeo.MapSuite.AndroidEdition.TileView" type="ThinkGeo.MapSuite.AndroidEdition.TileView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: ThinkGeo.MapSuite.AndroidEdition.TileView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ThinkGeo.MapSuite.AndroidEdition.TileView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThinkGeo.MapSuite.AndroidEdition.MapView" type="ThinkGeo.MapSuite.AndroidEdition.MapView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: ThinkGeo.MapSuite.AndroidEdition.MapView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ThinkGeo.MapSuite.AndroidEdition.MapView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThinkGeo.MapSuite.AndroidEdition.ZoomMapTool" type="ThinkGeo.MapSuite.AndroidEdition.ZoomMapTool">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: ThinkGeo.MapSuite.AndroidEdition.ZoomMapTool</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ThinkGeo.MapSuite.AndroidEdition.ZoomMapTool">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThinkGeo.MapSuite.AndroidEdition.CenterCoordinateMapTool" type="ThinkGeo.MapSuite.AndroidEdition.CenterCoordinateMapTool">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: ThinkGeo.MapSuite.AndroidEdition.CenterCoordinateMapTool</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ThinkGeo.MapSuite.AndroidEdition.CenterCoordinateMapTool">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThinkGeo.MapSuite.AndroidEdition.MapTool" type="ThinkGeo.MapSuite.AndroidEdition.MapTool">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: ThinkGeo.MapSuite.AndroidEdition.MapTool</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ThinkGeo.MapSuite.AndroidEdition.MapTool">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
   </xs:complexType>
 </xs:schema>
